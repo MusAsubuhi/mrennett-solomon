@@ -15,7 +15,7 @@ export function ScentNotes({ product, tone = "light" }: { product: Product; tone
       ["Base", product.notes.base],
     ];
     return (
-      <ol aria-label="Scent notes, top to base" className="space-y-2">
+      <ol aria-label="Scent notes, top to base" className="space-y-2" style={{ listStyle: "none", padding: 0, marginTop: 0 }}>
         {layers.map(([label, items], i) => (
           <li
             key={label}
@@ -31,7 +31,7 @@ export function ScentNotes({ product, tone = "light" }: { product: Product; tone
   }
 
   return (
-    <ul aria-label="Key notes" className="flex flex-wrap gap-2">
+    <ul aria-label="Key notes" className="flex flex-wrap gap-2" style={{ listStyle: "none", padding: 0, marginTop: 0 }}>
       {product.keyNotes.map((n) => (
         <li key={n} className={`rounded-full border px-3 py-1 text-sm ${chip}`}>
           {n}

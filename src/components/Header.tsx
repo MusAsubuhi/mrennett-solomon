@@ -12,12 +12,12 @@ export function Header() {
     <header
       id="site-header"
       data-scrolled="false"
-      className="group/header sticky top-0 z-40 border-b border-violet-700/15 bg-cream-50/95 backdrop-blur"
+      className="group/header sticky top-0 z-40 border-b border-violet-700/15 bg-cream-50"
     >
       <HeaderScroll />
       <div className="mx-auto flex h-16 max-w-page items-center justify-between gap-3 px-4 transition-[height] duration-300 group-data-[scrolled=true]/header:h-12 sm:px-6">
         <Link href="/" aria-label={`${brand.name}, home`} className="block w-24 shrink-0 transition-[width] duration-300 group-data-[scrolled=true]/header:w-20 sm:w-28">
-          <ImageSlot id="brand.logo-violet" sizes="120px" fit="contain" />
+          <ImageSlot id="brand.logo-violet" sizes="120px" fit="contain" className="!bg-transparent" />
         </Link>
 
         <nav aria-label="Main" className="hidden lg:block">
@@ -33,7 +33,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-1 sm:gap-2">
-          <WhatsAppLink source="header" className="hidden !px-4 md:inline-flex">
+          <WhatsAppLink source="header" className="max-md:!hidden !px-4">
             Order on WhatsApp
           </WhatsAppLink>
           <CartButton />

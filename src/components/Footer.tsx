@@ -17,12 +17,12 @@ export function Footer() {
   const shown = contactRows.filter(([, v]) => v);
 
   return (
-    <footer className="on-dark bg-botanical bg-violet-900 text-cream-50">
+    <footer className="on-dark relative bg-botanical bg-violet-900 text-cream-50">
       <div className="mx-auto max-w-page px-4 py-12 sm:px-6">
         <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <div className="w-32">
-              <ImageSlot id="brand.logo-gold" sizes="128px" fit="contain" />
+              <ImageSlot id="brand.logo-gold" sizes="128px" fit="contain" className="!bg-transparent" />
             </div>
             <p className="mt-3 max-w-sm font-display text-xl italic text-gold-300">{site.brand.tagline}</p>
             <Botanical name="lavender" className="mt-4 h-16 w-8 text-gold-500" />

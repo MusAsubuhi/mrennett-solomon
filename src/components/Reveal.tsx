@@ -12,15 +12,18 @@ export function Reveal({ children, className, delay = 0 }: { children: ReactNode
   useEffect(() => {
     const el = ref.current;
     if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight) return; // already on screen, leave it alone
-    el.classList.add("reveal-hidden");
+    // No layout reads (they force reflow). The observer's first report tells us whether the
+    // element is already on screen: if so leave it alone, otherwise hide it until it scrolls in.
+    let first = true;
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add("reveal-in");
+          if (!first) el.classList.add("reveal-in");
           io.disconnect();
+        } else if (first) {
+          el.classList.add("reveal-hidden");
         }
+        first = false;
       },
       { rootMargin: "0px 0px -8% 0px" },
     );

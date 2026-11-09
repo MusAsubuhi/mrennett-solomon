@@ -5,7 +5,7 @@ const tones = {
   light: "bg-cream-50",
   alt: "bg-cream-200",
   tint: "bg-violet-100",
-  dark: "on-dark bg-botanical bg-violet-800 text-cream-50",
+  dark: "on-dark relative bg-botanical bg-violet-800 text-cream-50",
 } as const;
 
 export function Section({

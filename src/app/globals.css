@@ -62,10 +62,6 @@ h3 {
   text-wrap: balance;
 }
 
-p {
-  text-wrap: pretty;
-}
-
 :focus-visible {
   outline: 2px solid var(--color-violet-700);
   outline-offset: 3px;
@@ -114,15 +110,16 @@ p {
 
 /* ---- Botanical pattern (brand.pattern-botanical), ~6% opacity ----------- */
 .bg-botanical {
-  position: relative;
-  isolation: isolate;
+  isolation: isolate; /* add the Tailwind `relative` class where this is used */
 }
 .bg-botanical::before {
+  contain: strict;
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url("/brand/pattern-botanical.svg");
+  /* Inlined copy of public/brand/pattern-botanical.svg so it never waits on a request. Update both together. */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22240%22%20height%3D%22240%22%20viewBox%3D%220%200%20240%20240%22%20fill%3D%22none%22%20stroke%3D%22%23D1AA74%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(34%2024)%20scale(.8)%22%3E%3Cpath%20d%3D%22M30%20118%20C30%2090%2030%2060%2030%2024%22%2F%3E%3Cpath%20d%3D%22M30%20104%20C19%2096%2013%2084%2011%2072%22%2F%3E%3Cpath%20d%3D%22M30%20104%20C41%2096%2047%2084%2049%2072%22%2F%3E%3Cellipse%20cx%3D%2230%22%20cy%3D%2214%22%20rx%3D%223%22%20ry%3D%227%22%2F%3E%3Cellipse%20cx%3D%2224%22%20cy%3D%2230%22%20rx%3D%223%22%20ry%3D%226.5%22%20transform%3D%22rotate(-28%2024%2030)%22%2F%3E%3Cellipse%20cx%3D%2236%22%20cy%3D%2230%22%20rx%3D%223%22%20ry%3D%226.5%22%20transform%3D%22rotate(28%2036%2030)%22%2F%3E%3Cellipse%20cx%3D%2224%22%20cy%3D%2242%22%20rx%3D%223%22%20ry%3D%226.5%22%20transform%3D%22rotate(-28%2024%2042)%22%2F%3E%3Cellipse%20cx%3D%2236%22%20cy%3D%2242%22%20rx%3D%223%22%20ry%3D%226.5%22%20transform%3D%22rotate(28%2036%2042)%22%2F%3E%3Cellipse%20cx%3D%2224%22%20cy%3D%2254%22%20rx%3D%223%22%20ry%3D%226.5%22%20transform%3D%22rotate(-28%2024%2054)%22%2F%3E%3Cellipse%20cx%3D%2236%22%20cy%3D%2254%22%20rx%3D%223%22%20ry%3D%226.5%22%20transform%3D%22rotate(28%2036%2054)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(140%20120)%20scale(.75)%22%3E%3Cpath%20d%3D%22M30%20118%20C28%2092%2034%2060%2030%2010%22%2F%3E%3Cellipse%20cx%3D%2219%22%20cy%3D%22100%22%20rx%3D%2210%22%20ry%3D%227%22%20transform%3D%22rotate(18%2019%20100)%22%2F%3E%3Cellipse%20cx%3D%2241%22%20cy%3D%2284%22%20rx%3D%2210%22%20ry%3D%227%22%20transform%3D%22rotate(-18%2041%2084)%22%2F%3E%3Cellipse%20cx%3D%2219%22%20cy%3D%2268%22%20rx%3D%2210%22%20ry%3D%227%22%20transform%3D%22rotate(18%2019%2068)%22%2F%3E%3Cellipse%20cx%3D%2241%22%20cy%3D%2252%22%20rx%3D%2210%22%20ry%3D%227%22%20transform%3D%22rotate(-18%2041%2052)%22%2F%3E%3Cellipse%20cx%3D%2219%22%20cy%3D%2236%22%20rx%3D%2210%22%20ry%3D%227%22%20transform%3D%22rotate(18%2019%2036)%22%2F%3E%3Cellipse%20cx%3D%2230%22%20cy%3D%228%22%20rx%3D%225%22%20ry%3D%225%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(130%2014)%20scale(.5)%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(72%2050%2042)%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(144%2050%2042)%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(216%2050%2042)%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(288%2050%2042)%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2242%22%20r%3D%222.5%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(20%20140)%20scale(.5)%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(72%2050%2042)%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(144%2050%2042)%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(216%2050%2042)%22%2F%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2226%22%20rx%3D%227%22%20ry%3D%2215%22%20transform%3D%22rotate(288%2050%2042)%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2242%22%20r%3D%222.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-size: 240px 240px;
   opacity: 0.06;
   pointer-events: none;

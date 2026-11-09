@@ -3,7 +3,7 @@ import { Button } from "@/components/Button";
 
 export default function NotFound() {
   return (
-    <div className="on-dark bg-botanical bg-violet-800 text-cream-50">
+    <div className="on-dark relative bg-botanical bg-violet-800 text-cream-50">
       <div className="mx-auto flex max-w-page flex-col items-center px-4 py-20 text-center sm:px-6 md:py-28">
         <Botanical name="eucalyptus" className="h-28 w-14 text-gold-500" />
         <p className="eyebrow mt-4">Error 404</p>
