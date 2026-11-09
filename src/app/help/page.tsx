@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Delivery, payment and help",
-  description: "How to order from Solo's, delivery, payment, returns and product care.",
+  description: "How to order from Mrennett, delivery, payment, returns and product care.",
   path: "/help",
 });
 

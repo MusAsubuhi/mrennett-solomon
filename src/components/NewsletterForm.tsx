@@ -67,7 +67,7 @@ export function NewsletterForm({ tone = "light" }: { tone?: "light" | "dark" }) 
       </div>
       <label className="flex items-start gap-3 text-sm">
         <input type="checkbox" name="consent" required className="mt-1 size-5 shrink-0 accent-violet-700" />
-        <span>I agree to receive occasional emails from Solo&apos;s. I can unsubscribe at any time.</span>
+        <span>I agree to receive occasional emails from Mrennett. I can unsubscribe at any time.</span>
       </label>
       <Button type="submit" tone={tone} disabled={state.status === "sending"}>
         {state.status === "sending" ? "Sending…" : "Sign up"}

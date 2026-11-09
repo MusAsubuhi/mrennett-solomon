@@ -13,7 +13,7 @@ export function buildOrderMessage(lines: OrderLine[], opts: { prompt: string; ti
     return `- ${qty} x ${p.name}, ${p.scentName}, ${p.sizeLabel}${price}`;
   });
   const allPriced = lines.length > 0 && lines.every((l) => hasPrice(l.product));
-  const out = [`Hello Solo's, I would like to order${opts.title ? ` (${opts.title})` : ""}:`, "", ...rows];
+  const out = [`Hello Mrennett, I would like to order${opts.title ? ` (${opts.title})` : ""}:`, "", ...rows];
   if (allPriced) {
     const subtotal = lines.reduce((n, l) => n + (l.product.price as number) * l.qty, 0);
     const pct = opts.discountPercent ?? 0;
@@ -33,5 +33,5 @@ export function whatsappUrl(message: string): string {
 
 /** A plain "chat with us" link with no order. */
 export function whatsappChatUrl(): string {
-  return whatsappUrl("Hello Solo's, I have a question.");
+  return whatsappUrl("Hello Mrennett, I have a question.");
 }

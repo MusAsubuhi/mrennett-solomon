@@ -63,7 +63,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. Four places to be Solo */}
+      {/* 2. Four places for a moment of your own */}
       <Section labelledBy="places-title">
         <SectionHeading id="places-title" eyebrow={h.momentsEyebrow} title={h.momentsHeading} />
         <ul className="grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
@@ -134,7 +134,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 7. The Solo's promise (hidden until the owner confirms it) */}
+      {/* 7. The Mrennett promise (hidden until the owner confirms it) */}
       {promiseReady ? (
         <Section tone="dark" labelledBy="promise-title">
           <SectionHeading id="promise-title" title={site.promise.heading} align="center" />
@@ -150,7 +150,7 @@ export default function HomePage() {
       ) : (
         SHOW_DEV_HINTS && (
           <Section tone="light">
-            <NeededBox label="The Solo's promise strip is hidden. Fill content/site.json → promise and set show to true." />
+            <NeededBox label="The Mrennett promise strip is hidden. Fill content/site.json → promise and set show to true." />
           </Section>
         )
       )}
@@ -161,7 +161,7 @@ export default function HomePage() {
           <div className="grid items-center gap-8 md:grid-cols-[1fr_1.2fr] md:gap-14">
             <ImageSlot id="home.story" sizes="(min-width: 768px) 40vw, 100vw" className="mx-auto w-full max-w-md rounded-sm" />
             <div>
-              <p className="eyebrow mb-2">About Solo&apos;s</p>
+              <p className="eyebrow mb-2">About Mrennett</p>
               <h2 id="story-title" className="text-4xl md:text-5xl">
                 {site.story.heading}
               </h2>

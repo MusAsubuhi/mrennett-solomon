@@ -14,7 +14,7 @@ export function Accordion({ items, defaultOpenFirst = false }: { items: Accordio
               +
             </span>
           </summary>
-          <div className="prose-solos pb-5 text-ink-900">{item.content}</div>
+          <div className="prose-mrennett pb-5 text-ink-900">{item.content}</div>
         </details>
       ))}
     </div>

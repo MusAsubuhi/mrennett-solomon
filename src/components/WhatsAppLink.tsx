@@ -25,7 +25,7 @@ export function WhatsAppLink({ message, children, variant = "primary", tone = "l
 
   if (!whatsappEnabled) {
     if (process.env.NODE_ENV !== "production") {
-      console.warn("[Solo's] NEXT_PUBLIC_WHATSAPP_NUMBER is empty, so WhatsApp links show an 'ordering opens soon' notice.");
+      console.warn("[Mrennett] NEXT_PUBLIC_WHATSAPP_NUMBER is empty, so WhatsApp links show an 'ordering opens soon' notice.");
     }
     return (
       <Button

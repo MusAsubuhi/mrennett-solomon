@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Find your scent",
-  description: "Three questions, one scent that fits your day. Take the Solo's scent quiz.",
+  description: "Three questions, one scent that fits your day. Take the Mrennett scent quiz.",
   path: "/quiz",
 });
 

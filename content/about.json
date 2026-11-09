@@ -1,12 +1,12 @@
 {
   "_readme": "Every statement of fact on /about must come from this file. All values are placeholders until the owner supplies them.",
   "heading": "Our story",
-  "intro": "[[TODO: one-paragraph introduction to Solo's]]",
+  "intro": "[[TODO: one-paragraph introduction to Mrennett]]",
   "founder": {
     "name": "[[TODO: founder or maker name]]",
     "story": "[[TODO: founder story, 2 to 4 short paragraphs, in the owner's words]]"
   },
-  "stands": "[[TODO: what Solo's stands for, 2 to 3 sentences]]",
+  "stands": "[[TODO: what Mrennett stands for, 2 to 3 sentences]]",
   "making": "[[TODO: how the products are made and where]]",
   "ingredients": "[[TODO: ingredients and standards, only what can be evidenced]]"
 }

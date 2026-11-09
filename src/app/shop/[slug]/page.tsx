@@ -155,7 +155,7 @@ export default async function ProductPage({ params }: Props) {
             <ScentNotes product={p} />
           </div>
 
-          {desc ? <p className="prose-solos mt-5">{desc}</p> : SHOW_DEV_HINTS && <NeededBox className="mt-5" label={todoLabel(p.shortDescription)} />}
+          {desc ? <p className="prose-mrennett mt-5">{desc}</p> : SHOW_DEV_HINTS && <NeededBox className="mt-5" label={todoLabel(p.shortDescription)} />}
 
           {p.claims.length > 0 && (
             <ul className="mt-4 list-disc pl-5">

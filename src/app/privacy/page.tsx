@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Privacy",
-  description: "How the Solo's website handles your information.",
+  description: "How the Mrennett website handles your information.",
   path: "/privacy",
 });
 

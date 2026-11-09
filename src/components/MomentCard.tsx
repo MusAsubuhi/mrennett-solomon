@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { PlaceInfo } from "@/lib/types";
 import { ImageSlot } from "./ImageSlot";
 
-/** A place to be Solo: shower, hands, laundry or home. Links to the shop filtered by that place. */
+/** A place for a moment: shower, hands, laundry or home. Links to the shop filtered by that place. */
 export function MomentCard({ place }: { place: PlaceInfo }) {
   return (
     <Link

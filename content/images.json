@@ -1,31 +1,31 @@
 {
   "brand.logo-gold": {
     "src": "/brand/logo-gold.svg",
-    "alt": "Solo's",
+    "alt": "Mrennett",
     "ratio": "5/1",
     "focal": "50% 50%",
     "status": "placeholder",
     "minWidth": 400,
     "required": true,
-    "description": "Solo's wordmark in gold serif, transparent SVG",
+    "description": "Mrennett wordmark in gold serif, transparent SVG",
     "showWhilePlaceholder": true,
     "note": "Draft wordmark made for the build. Replace with the real logo artwork."
   },
   "brand.logo-violet": {
     "src": "/brand/logo-violet.svg",
-    "alt": "Solo's",
+    "alt": "Mrennett",
     "ratio": "5/1",
     "focal": "50% 50%",
     "status": "placeholder",
     "minWidth": 400,
     "required": true,
-    "description": "Solo's wordmark in violet serif, transparent SVG",
+    "description": "Mrennett wordmark in violet serif, transparent SVG",
     "showWhilePlaceholder": true,
     "note": "Draft wordmark made for the build. Replace with the real logo artwork."
   },
   "brand.favicon": {
     "src": "/brand/favicon-512.png",
-    "alt": "Solo's icon, a gold S on violet",
+    "alt": "Mrennett icon, a gold M on violet",
     "ratio": "1/1",
     "focal": "50% 50%",
     "status": "placeholder",
@@ -37,7 +37,7 @@
   },
   "brand.og": {
     "src": "/images/brand/og.jpg",
-    "alt": "Solo's. Your moment, Solo's.",
+    "alt": "Mrennett. Your moment, Mrennett.",
     "ratio": "1200/630",
     "focal": "50% 50%",
     "status": "placeholder",
@@ -61,7 +61,7 @@
   },
   "reference.concept": {
     "src": "/reference/solos-concept.jpg",
-    "alt": "The owner's concept image of the four Solo's products",
+    "alt": "The owner's concept image of the four products (its labels still show the earlier working name)",
     "ratio": "3/2",
     "focal": "50% 50%",
     "status": "placeholder",
@@ -72,7 +72,7 @@
   },
   "home.hero": {
     "src": "/images/home/hero.jpg",
-    "alt": "Solo's shower gel, hand wash, fabric softener and reed diffuser on a wooden table by a sunlit garden window",
+    "alt": "Mrennett shower gel, hand wash, fabric softener and reed diffuser on a wooden table by a sunlit garden window",
     "ratio": "16/9",
     "focal": "50% 45%",
     "status": "placeholder",

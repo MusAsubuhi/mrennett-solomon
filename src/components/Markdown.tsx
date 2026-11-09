@@ -92,5 +92,5 @@ export function Markdown({ source }: { source: string }) {
   }
   flushPara();
   flushList();
-  return <div className="prose-solos">{blocks}</div>;
+  return <div className="prose-mrennett">{blocks}</div>;
 }

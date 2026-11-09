@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   Solo's design tokens. ALL colours live here, in one place.
+   Mrennett design tokens. ALL colours live here, in one place.
    Values are sampled from the owner's concept image and are approximate.
    Confirm them against the real label artwork, then edit them here only.
    ========================================================================== */
@@ -86,24 +86,24 @@ h3 {
   color: var(--color-gold-300);
 }
 
-.prose-solos {
+.prose-mrennett {
   max-width: 65ch;
 }
-.prose-solos p + p,
-.prose-solos ul,
-.prose-solos ol {
+.prose-mrennett p + p,
+.prose-mrennett ul,
+.prose-mrennett ol {
   margin-top: 1rem;
 }
-.prose-solos h2 {
+.prose-mrennett h2 {
   font-size: 1.75rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
-.prose-solos ul {
+.prose-mrennett ul {
   list-style: disc;
   padding-left: 1.25rem;
 }
-.prose-solos ol {
+.prose-mrennett ol {
   list-style: decimal;
   padding-left: 1.25rem;
 }

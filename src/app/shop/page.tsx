@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Shop",
-  description: "Solo's shower gel, hand wash, fabric softener and reed diffuser. Filter by where you use it or the mood you want.",
+  description: "Mrennett shower gel, hand wash, fabric softener and reed diffuser. Filter by where you use it or the mood you want.",
   path: "/shop",
 });
 
@@ -19,7 +19,7 @@ export default function ShopPage() {
       <PageHeader>
         <Breadcrumbs items={[{ name: "Shop", path: "/shop" }]} />
         <div className="mt-6">
-          <SectionHeading as="h1" eyebrow="The range" title="Shop Solo's" intro="Choose by where you want a moment: the shower, your hands, your laundry or your home." />
+          <SectionHeading as="h1" eyebrow="The range" title="Shop Mrennett" intro="Choose by where you want a moment: the shower, your hands, your laundry or your home." />
         </div>
       </PageHeader>
       <div className="mx-auto max-w-page px-4 pb-16 sm:px-6">

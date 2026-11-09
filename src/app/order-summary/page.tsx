@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Order summary",
-  description: "A printable summary of your Solo's ritual.",
+  description: "A printable summary of your Mrennett ritual.",
   path: "/order-summary",
   noindex: true,
 });

@@ -37,26 +37,26 @@ function add(id: string, file: string, ratio: string, minWidth: number, required
 
 /* ---- Brand and global ---------------------------------------------------- */
 add("brand.logo-gold", "/brand/logo-gold.svg", "5/1", 400, true, {
-  description: "Solo's wordmark in gold serif, transparent SVG",
-  alt: "Solo's",
+  description: "Mrennett wordmark in gold serif, transparent SVG",
+  alt: "Mrennett",
   showWhilePlaceholder: true,
   note: "Draft wordmark made for the build. Replace with the real logo artwork.",
 });
 add("brand.logo-violet", "/brand/logo-violet.svg", "5/1", 400, true, {
-  description: "Solo's wordmark in violet serif, transparent SVG",
-  alt: "Solo's",
+  description: "Mrennett wordmark in violet serif, transparent SVG",
+  alt: "Mrennett",
   showWhilePlaceholder: true,
   note: "Draft wordmark made for the build. Replace with the real logo artwork.",
 });
 add("brand.favicon", "/brand/favicon-512.png", "1/1", 512, true, {
   description: "Simple S or the wordmark initial on violet, 512 x 512",
-  alt: "Solo's icon, a gold S on violet",
+  alt: "Mrennett icon, a gold M on violet",
   decorative: true,
   note: "src/app/icon.svg is the stand-in. Add the real 512 px PNG here and an icon file in src/app.",
 });
 add("brand.og", "brand/og.jpg", "1200/630", 1200, true, {
   description: "Wordmark and tagline over the botanical pattern, 1200 x 630",
-  alt: "Solo's. Your moment, Solo's.",
+  alt: "Mrennett. Your moment, Mrennett.",
   note: "src/app/opengraph-image.tsx generates a stand-in until this is final.",
 });
 add("brand.pattern-botanical", "/brand/pattern-botanical.svg", "1/1", 240, true, {
@@ -68,7 +68,7 @@ add("brand.pattern-botanical", "/brand/pattern-botanical.svg", "1/1", 240, true,
 });
 slots["reference.concept"] = {
   src: "/reference/solos-concept.jpg",
-  alt: "The owner's concept image of the four Solo's products",
+  alt: "The owner's concept image of the four products (its labels still show the earlier working name)",
   ratio: "3/2",
   focal: "50% 50%",
   status: "placeholder",
@@ -83,7 +83,7 @@ add("home.hero", "home/hero.jpg", "16/9", 2400, true, {
   mobileRatio: "4/5",
   focal: "50% 45%",
   description: "The four products grouped on a wooden surface beside a sunlit garden window",
-  alt: "Solo's shower gel, hand wash, fabric softener and reed diffuser on a wooden table by a sunlit garden window",
+  alt: "Mrennett shower gel, hand wash, fabric softener and reed diffuser on a wooden table by a sunlit garden window",
   showWhilePlaceholder: true,
   note: "Reference concept image used until real photography is ready",
 });

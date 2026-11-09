@@ -10,7 +10,7 @@ This page explains, in plain language, what information this website handles and
 ## Information you give us
 
 - **Orders.** When you choose Order on WhatsApp, your order is sent as a WhatsApp message. We see the details you put in that message, such as your name, delivery area and payment method. WhatsApp has its own privacy terms.
-- **Emails.** If you sign up for emails, we ask for your email address and your consent. We use it only to send you Solo's news.
+- **Emails.** If you sign up for emails, we ask for your email address and your consent. We use it only to send you Mrennett news.
 - **Messages.** If you use the contact form, we use your name, email address and message to reply to you.
 
 ## Consent and your choices

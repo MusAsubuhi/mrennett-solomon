@@ -39,7 +39,7 @@ export function RitualBuilder({
   const saving = subtotal !== null && discountPercent > 0 ? (subtotal * discountPercent) / 100 : 0;
   const message = buildOrderMessage(
     chosen.map((v) => ({ product: v.product, qty: 1 })),
-    { prompt, title: "a Solo's set", discountPercent },
+    { prompt, title: "a Mrennett set", discountPercent },
   );
 
   function toggle(id: string) {

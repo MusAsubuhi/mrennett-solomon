@@ -1,11 +1,11 @@
 {
   "_readme": "Site-wide settings and copy. Unknown values are [[TODO: ...]] and never show to visitors in production. Brand facts here are PROVISIONAL (from the concept image only).",
   "brand": {
-    "name": "Solo's",
-    "tagline": "Your moment, Solo's.",
+    "name": "Mrennett",
+    "tagline": "Your moment, Mrennett.",
     "supportingLine": "Garden-scented care for the shower, your hands, your laundry and your home.",
-    "metaTitle": "Solo's | Garden-scented shower gel, hand wash, fabric softener and home scent",
-    "metaDescription": "Solo's makes a small range of garden-scented products for the shower, your hands, your laundry and your home. Find your scent and order on WhatsApp."
+    "metaTitle": "Mrennett | Garden-scented shower gel, hand wash, fabric softener and home scent",
+    "metaDescription": "Mrennett makes a small range of garden-scented products for the shower, your hands, your laundry and your home. Find your scent and order on WhatsApp."
   },
   "currency": "KES",
   "contact": {
@@ -24,7 +24,7 @@
   },
   "promise": {
     "show": false,
-    "heading": "The Solo's promise",
+    "heading": "The Mrennett promise",
     "items": [
       { "title": "[[TODO: promise 1 title, e.g. what is in it]]", "text": "[[TODO: one sentence the owner can stand behind]]" },
       { "title": "[[TODO: promise 2 title, e.g. what is left out]]", "text": "[[TODO: one sentence the owner can stand behind]]" },
@@ -44,13 +44,13 @@
     { "label": "Help", "href": "/help" }
   ],
   "home": {
-    "momentsEyebrow": "Four places to be Solo",
+    "momentsEyebrow": "Four places for a moment of your own",
     "momentsHeading": "A small moment for every part of your day",
     "rangeEyebrow": "The range",
     "rangeHeading": "Four products, one family of scents",
     "scentEyebrow": "The scent story",
     "scentHeading": "Garden notes, one at a time",
-    "scentIntro": "Each Solo's scent is named for the flowers and leaves it is built around.",
+    "scentIntro": "Each Mrennett scent is named for the flowers and leaves it is built around.",
     "quizHeading": "Find your scent",
     "quizText": "Three questions, one scent that fits your day.",
     "ritualEyebrow": "Build your ritual",
@@ -59,7 +59,7 @@
     "proofHeading": "From our customers",
     "journalEyebrow": "Shower notes",
     "journalHeading": "From the journal",
-    "closingHeading": "Stay close to Solo's",
+    "closingHeading": "Stay close to Mrennett",
     "closingText": "New scents and small notes now and then. No spam."
   },
   "ordering": {

@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Contact",
-  description: "Message Solo's on WhatsApp, or use the contact form.",
+  description: "Message Mrennett on WhatsApp, or use the contact form.",
   path: "/contact",
 });
 

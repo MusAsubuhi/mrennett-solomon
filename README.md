@@ -1,6 +1,6 @@
-# Solo's website
+# Mrennett website
 
-A mobile-first marketing and ordering site for Solo's (shower gel, hand wash, fabric softener, reed diffuser). Built with Next.js (App Router), TypeScript and Tailwind CSS. Orders are sent over WhatsApp; there is no database and no payment processor in phase one.
+A mobile-first marketing and ordering site for Mrennett (shower gel, hand wash, fabric softener, reed diffuser). Built with Next.js (App Router), TypeScript and Tailwind CSS. Orders are sent over WhatsApp; there is no database and no payment processor in phase one.
 
 ## Run it
 

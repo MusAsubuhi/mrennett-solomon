@@ -23,7 +23,7 @@ If something is wrong with your order, please tell us as soon as you can. We wil
 
 ## Using this website
 
-The content on this website, including the Solo's name, labels and images, belongs to Solo's. Please do not copy it without asking.
+The content on this website, including the Mrennett name, labels and images, belongs to Mrennett. Please do not copy it without asking.
 
 ## Changes
 

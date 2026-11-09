@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Build your ritual",
-  description: "Pick the Solo's products you want, see your set take shape, and send it on WhatsApp.",
+  description: "Pick the Mrennett products you want, see your set take shape, and send it on WhatsApp.",
   path: "/ritual",
 });
 

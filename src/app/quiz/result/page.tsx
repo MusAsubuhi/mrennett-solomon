@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Your scent",
-  description: "Your Solo's scent mood and the products that match it.",
+  description: "Your Mrennett scent mood and the products that match it.",
   path: "/quiz/result",
   noindex: true,
 });

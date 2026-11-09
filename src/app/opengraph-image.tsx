@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getSite } from "@/lib/content";
 
-export const alt = "Solo's. Your moment, Solo's.";
+export const alt = "Mrennett. Your moment, Mrennett.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

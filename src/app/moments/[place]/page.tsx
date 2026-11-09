@@ -55,7 +55,7 @@ export default async function MomentPage({ params }: Props) {
         <div className="grid gap-10 md:grid-cols-[1.1fr_1fr] md:gap-16">
           <div>
             <p className="eyebrow mb-2">{info.momentLine}</p>
-            <p className="prose-solos text-lg">{info.body}</p>
+            <p className="prose-mrennett text-lg">{info.body}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/quiz">Find your scent</Button>
               <Button href={`/shop?place=${info.id}`} variant="secondary">
@@ -72,7 +72,7 @@ export default async function MomentPage({ params }: Props) {
       </Section>
 
       <Section tone="alt">
-        <h2 className="text-3xl">Other places to be Solo</h2>
+        <h2 className="text-3xl">Other places for your moment</h2>
         <ul className="mt-4 flex flex-wrap gap-3">
           {others.map((o) => (
             <li key={o.id}>

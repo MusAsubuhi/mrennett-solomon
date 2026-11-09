@@ -45,7 +45,7 @@ export const useCart = create<CartState>()(
       announce: (announcement) => set({ announcement }),
     }),
     {
-      name: "solos-cart",
+      name: "mrennett-cart",
       partialize: (s) => ({ lines: s.lines }),
       // Rehydrated in CartDrawer after mount so server and client HTML match.
       skipHydration: true,

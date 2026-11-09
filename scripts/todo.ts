@@ -30,7 +30,7 @@ function pageFor(file: string, keyPath: string): string {
   if (file === "site.json") {
     if (keyPath.startsWith("contact")) return "Contact and footer";
     if (keyPath.startsWith("delivery")) return "Help, product pages and home closing band";
-    if (keyPath.startsWith("promise")) return "Home: Solo's promise strip";
+    if (keyPath.startsWith("promise")) return "Home: Mrennett promise strip";
     if (keyPath.startsWith("story")) return "Home: our story";
   }
   return `Other (${file})`;
@@ -64,7 +64,7 @@ for (const f of fs.readdirSync(CONTENT_DIR).filter((x) => x.endsWith(".json") &&
 
 /* ---- Structural items that are hidden or incomplete by design ------------- */
 const site = getSite();
-if (!site.promise.show) add("Home: Solo's promise strip", "content/site.json → promise.show", "Strip is hidden. Fill the three items, then set show to true.");
+if (!site.promise.show) add("Home: Mrennett promise strip", "content/site.json → promise.show", "Strip is hidden. Fill the three items, then set show to true.");
 if (getReviews().length === 0) add("Home: proof", "content/reviews.json", "No reviews yet, so the section is hidden. Add real, permitted customer quotes and photos only.");
 if (site.bundleDiscountPercent === 0) add("Ritual builder", "content/site.json → bundleDiscountPercent", "Optional: set a set-discount percentage. At 0 only the total is shown.");
 if (!process.env.NEXT_PUBLIC_WHATSAPP_NUMBER) add("Ordering", ".env.local → NEXT_PUBLIC_WHATSAPP_NUMBER", "WhatsApp number in international format, no plus sign. Until set, order buttons say \"ordering opens soon\".");

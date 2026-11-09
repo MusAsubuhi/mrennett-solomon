@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Our story",
-  description: "The story behind Solo's and how the products are made.",
+  description: "The story behind Mrennett and how the products are made.",
   path: "/about",
 });
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
               <h2 id="founder" className="text-4xl">
                 <Copy value={a.founder.name} as="span" />
               </h2>
-              <Copy value={a.founder.story} className="prose-solos mt-4 whitespace-pre-line" />
+              <Copy value={a.founder.story} className="prose-mrennett mt-4 whitespace-pre-line" />
             </div>
           </div>
         </Section>
@@ -56,9 +56,9 @@ export default function AboutPage() {
       {show(a.stands) && (
         <Section labelledBy="stands">
           <h2 id="stands" className="text-4xl">
-            What Solo&apos;s stands for
+            What Mrennett stands for
           </h2>
-          <Copy value={a.stands} className="prose-solos mt-4" />
+          <Copy value={a.stands} className="prose-mrennett mt-4" />
         </Section>
       )}
 
@@ -70,13 +70,13 @@ export default function AboutPage() {
           <div className="mt-6 grid gap-8 md:grid-cols-2">
             {show(a.making) && (
               <div className="space-y-4">
-                <Copy value={a.making} className="prose-solos" />
+                <Copy value={a.making} className="prose-mrennett" />
                 {optional("about.workshop") && <ImageSlot id="about.workshop" sizes="(min-width: 768px) 50vw, 100vw" className="rounded-sm" />}
               </div>
             )}
             {show(a.ingredients) && (
               <div className="space-y-4">
-                <Copy value={a.ingredients} className="prose-solos" />
+                <Copy value={a.ingredients} className="prose-mrennett" />
                 {optional("about.ingredients") && <ImageSlot id="about.ingredients" sizes="(min-width: 768px) 50vw, 100vw" className="rounded-sm" />}
               </div>
             )}

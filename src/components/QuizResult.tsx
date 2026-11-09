@@ -30,7 +30,7 @@ export function QuizResult({ moods, views }: { moods: Mood[]; views: ProductView
     const url = window.location.href;
     try {
       if (navigator.share) {
-        await navigator.share({ title: `My Solo's scent is ${mood!.name}`, url });
+        await navigator.share({ title: `My Mrennett scent is ${mood!.name}`, url });
         return;
       }
       await navigator.clipboard.writeText(url);

@@ -6,7 +6,7 @@ test("home to quiz to result to add to cart to WhatsApp link", async ({ page }) 
   page.on("console", (m) => m.type() === "error" && errors.push(m.text()));
 
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your moment, Solo's.");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your moment, Mrennett.");
 
   // Quiz: pick the first answer each time and finish
   await page.getByRole("link", { name: "Find your scent" }).first().click();

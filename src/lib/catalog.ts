@@ -34,7 +34,7 @@ export function productTitle(p: Product): string {
 
 /** Neutral description used for SEO / sharing when no copy has been supplied. No claims. */
 export function fallbackDescription(p: Product): string {
-  return `Solo's ${p.name} in ${p.scentName}, ${p.sizeLabel}.`;
+  return `Mrennett ${p.name} in ${p.scentName}, ${p.sizeLabel}.`;
 }
 
 /** Two other products: same mood first, then a different place. */
