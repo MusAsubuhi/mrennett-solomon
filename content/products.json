@@ -1,0 +1,102 @@
+[
+  {
+    "id": "shower-gel",
+    "slug": "shower-gel-lavender-orchid",
+    "name": "Shower Gel",
+    "scentName": "Lavender & Orchid",
+    "place": "shower",
+    "sizeLabel": "500 mL",
+    "moods": ["calm"],
+    "price": null,
+    "priceConfirmed": false,
+    "shortDescription": null,
+    "howToUse": null,
+    "keyNotes": ["Lavender", "Orchid"],
+    "notes": null,
+    "notesConfirmed": false,
+    "ingredients": null,
+    "claims": [],
+    "images": {
+      "packshot": "product.shower-gel.packshot",
+      "labelDetail": "product.shower-gel.label-detail",
+      "lifestyle": "product.shower-gel.lifestyle",
+      "inUse": "product.shower-gel.in-use"
+    },
+    "inStock": null
+  },
+  {
+    "id": "hand-wash",
+    "slug": "hand-wash-jasmine-apple-blossom",
+    "name": "Hand Wash",
+    "scentName": "Jasmine & Apple Blossom",
+    "place": "hands",
+    "sizeLabel": "300 mL",
+    "moods": ["bright"],
+    "price": null,
+    "priceConfirmed": false,
+    "shortDescription": null,
+    "howToUse": null,
+    "keyNotes": ["Jasmine", "Apple blossom"],
+    "notes": null,
+    "notesConfirmed": false,
+    "ingredients": null,
+    "claims": [],
+    "images": {
+      "packshot": "product.hand-wash.packshot",
+      "labelDetail": "product.hand-wash.label-detail",
+      "lifestyle": "product.hand-wash.lifestyle",
+      "inUse": "product.hand-wash.in-use"
+    },
+    "inStock": null
+  },
+  {
+    "id": "fabric-softener",
+    "slug": "fabric-softener-lavender-comfort",
+    "name": "Fabric Softener",
+    "scentName": "Lavender Comfort",
+    "place": "laundry",
+    "sizeLabel": "750 mL",
+    "moods": ["calm"],
+    "price": null,
+    "priceConfirmed": false,
+    "shortDescription": null,
+    "howToUse": null,
+    "keyNotes": ["Lavender"],
+    "notes": null,
+    "notesConfirmed": false,
+    "ingredients": null,
+    "claims": [],
+    "images": {
+      "packshot": "product.fabric-softener.packshot",
+      "labelDetail": "product.fabric-softener.label-detail",
+      "lifestyle": "product.fabric-softener.lifestyle",
+      "inUse": "product.fabric-softener.in-use"
+    },
+    "inStock": null
+  },
+  {
+    "id": "home-scent",
+    "slug": "reed-diffuser-eucalyptus-sage",
+    "name": "Home Scent, Reed Diffuser",
+    "scentName": "Eucalyptus & Sage",
+    "place": "home",
+    "sizeLabel": "100 mL",
+    "moods": ["fresh"],
+    "price": null,
+    "priceConfirmed": false,
+    "shortDescription": null,
+    "howToUse": null,
+    "keyNotes": ["Eucalyptus", "Sage"],
+    "notes": null,
+    "notesConfirmed": false,
+    "ingredients": null,
+    "claims": [],
+    "images": {
+      "packshot": "product.home-scent.packshot",
+      "labelDetail": "product.home-scent.label-detail",
+      "lifestyle": "product.home-scent.lifestyle",
+      "inUse": "product.home-scent.in-use"
+    },
+    "inStock": null
+  }
+]

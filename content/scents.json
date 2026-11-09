@@ -1,0 +1,8 @@
+[
+  { "id": "lavender", "name": "Lavender", "slot": "scent.lavender", "match": "lavender" },
+  { "id": "orchid", "name": "Orchid", "slot": "scent.orchid", "match": "orchid" },
+  { "id": "jasmine", "name": "Jasmine", "slot": "scent.jasmine", "match": "jasmine" },
+  { "id": "apple-blossom", "name": "Apple blossom", "slot": "scent.apple-blossom", "match": "apple blossom" },
+  { "id": "eucalyptus", "name": "Eucalyptus", "slot": "scent.eucalyptus", "match": "eucalyptus" },
+  { "id": "sage", "name": "Sage", "slot": "scent.sage", "match": "sage" }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "how-to-order",
+    "group": "Ordering",
+    "question": "How do I order?",
+    "answer": "Add products to your ritual, open the cart and choose Order on WhatsApp. Your message arrives pre-filled with your items. Add your name, your delivery area and how you would like to pay, then send it."
+  },
+  {
+    "id": "delivery-areas",
+    "group": "Delivery",
+    "question": "Where do you deliver, and how long does it take?",
+    "answer": "[[TODO: delivery areas, times and costs]]"
+  },
+  {
+    "id": "payment",
+    "group": "Payment",
+    "question": "How can I pay?",
+    "answer": "[[TODO: accepted payment methods, e.g. mobile money, bank transfer, cash on delivery]]"
+  },
+  {
+    "id": "returns",
+    "group": "Returns",
+    "question": "What if something is wrong with my order?",
+    "answer": "[[TODO: returns, damage and refund policy]]"
+  },
+  {
+    "id": "care",
+    "group": "Product care",
+    "question": "How should I store my Solo's products?",
+    "answer": "[[TODO: storage and care guidance from the maker]]"
+  },
+  {
+    "id": "contact",
+    "group": "Contact",
+    "question": "How do I reach you?",
+    "answer": "The quickest way is WhatsApp. You can also use the contact page."
+  }
+]

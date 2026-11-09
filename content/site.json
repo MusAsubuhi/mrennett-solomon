@@ -1,0 +1,68 @@
+{
+  "_readme": "Site-wide settings and copy. Unknown values are [[TODO: ...]] and never show to visitors in production. Brand facts here are PROVISIONAL (from the concept image only).",
+  "brand": {
+    "name": "Solo's",
+    "tagline": "Your moment, Solo's.",
+    "supportingLine": "Garden-scented care for the shower, your hands, your laundry and your home.",
+    "metaTitle": "Solo's | Garden-scented shower gel, hand wash, fabric softener and home scent",
+    "metaDescription": "Solo's makes a small range of garden-scented products for the shower, your hands, your laundry and your home. Find your scent and order on WhatsApp."
+  },
+  "currency": "KES",
+  "contact": {
+    "phone": "[[TODO: owner to supply phone number]]",
+    "email": "[[TODO: owner to supply email address]]",
+    "location": "[[TODO: owner to supply town / country or service area]]",
+    "hours": "[[TODO: owner to supply opening or reply hours]]"
+  },
+  "socials": [],
+  "bundleDiscountPercent": 0,
+  "delivery": {
+    "summary": "[[TODO: one-line delivery summary, e.g. where and how long]]",
+    "payment": "[[TODO: payment methods accepted]]",
+    "areas": "[[TODO: delivery areas and times]]",
+    "returns": "[[TODO: returns and refunds policy]]"
+  },
+  "promise": {
+    "show": false,
+    "heading": "The Solo's promise",
+    "items": [
+      { "title": "[[TODO: promise 1 title, e.g. what is in it]]", "text": "[[TODO: one sentence the owner can stand behind]]" },
+      { "title": "[[TODO: promise 2 title, e.g. what is left out]]", "text": "[[TODO: one sentence the owner can stand behind]]" },
+      { "title": "[[TODO: promise 3 title, e.g. where it is made]]", "text": "[[TODO: one sentence the owner can stand behind]]" }
+    ]
+  },
+  "story": {
+    "heading": "Our story",
+    "short": "[[TODO: owner to supply a three-sentence founder / maker story]]"
+  },
+  "nav": [
+    { "label": "Shop", "href": "/shop" },
+    { "label": "Find your scent", "href": "/quiz" },
+    { "label": "Build a ritual", "href": "/ritual" },
+    { "label": "Our story", "href": "/about" },
+    { "label": "Journal", "href": "/journal" },
+    { "label": "Help", "href": "/help" }
+  ],
+  "home": {
+    "momentsEyebrow": "Four places to be Solo",
+    "momentsHeading": "A small moment for every part of your day",
+    "rangeEyebrow": "The range",
+    "rangeHeading": "Four products, one family of scents",
+    "scentEyebrow": "The scent story",
+    "scentHeading": "Garden notes, one at a time",
+    "scentIntro": "Each Solo's scent is named for the flowers and leaves it is built around.",
+    "quizHeading": "Find your scent",
+    "quizText": "Three questions, one scent that fits your day.",
+    "ritualEyebrow": "Build your ritual",
+    "ritualHeading": "Pick the moments you want, gift them as a set",
+    "ritualText": "Choose any of the range and send the set to us on WhatsApp.",
+    "proofHeading": "From our customers",
+    "journalEyebrow": "Shower notes",
+    "journalHeading": "From the journal",
+    "closingHeading": "Stay close to Solo's",
+    "closingText": "New scents and small notes now and then. No spam."
+  },
+  "ordering": {
+    "whatsappPrompt": "Please tell us: your name, your delivery area and how you would like to pay."
+  }
+}

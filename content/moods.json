@@ -1,0 +1,20 @@
+[
+  {
+    "id": "calm",
+    "name": "Calm",
+    "description": "Soft, floral and lavender-led. A scent for slowing down.",
+    "illustration": "lavender"
+  },
+  {
+    "id": "bright",
+    "name": "Bright",
+    "description": "Light, fruity florals. A scent for a fresh start to the day.",
+    "illustration": "jasmine"
+  },
+  {
+    "id": "fresh",
+    "name": "Fresh",
+    "description": "Clean, green and herbal. A scent for open windows and clear rooms.",
+    "illustration": "eucalyptus"
+  }
+]

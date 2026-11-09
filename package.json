@@ -1,19 +1,33 @@
 {
-  "name": "solos",
+  "name": "solos-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "tsx scripts/sync-reference.ts",
     "dev": "next dev",
+    "prebuild": "tsx scripts/sync-reference.ts && tsx scripts/validate-content.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "images:generate": "tsx scripts/generate-images-manifest.ts",
+    "images:status": "tsx scripts/images-status.ts",
+    "check:images": "tsx scripts/check-images.ts",
+    "todo": "tsx scripts/todo.ts",
+    "validate": "tsx scripts/validate-content.ts",
+    "check:contrast": "tsx scripts/check-contrast.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "16.4.5",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "^4.6.7",
+    "zustand": "^5.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -21,6 +35,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

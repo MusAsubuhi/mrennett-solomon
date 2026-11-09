@@ -1,0 +1,34 @@
+{
+  "tieOrder": ["calm", "fresh", "bright"],
+  "questions": [
+    {
+      "id": "when",
+      "prompt": "When do you most want a moment to yourself?",
+      "answers": [
+        { "label": "Morning rush", "moods": ["bright"] },
+        { "label": "After work", "moods": ["calm"] },
+        { "label": "Late evening", "moods": ["calm"] },
+        { "label": "Weekend reset", "moods": ["fresh"] }
+      ]
+    },
+    {
+      "id": "feel",
+      "prompt": "Which feels most like you right now?",
+      "answers": [
+        { "label": "A quiet garden", "moods": ["calm"] },
+        { "label": "Sunshine on a kitchen counter", "moods": ["bright"] },
+        { "label": "Open windows and fresh air", "moods": ["fresh"] }
+      ]
+    },
+    {
+      "id": "refresh",
+      "prompt": "What are you refreshing first?",
+      "answers": [
+        { "label": "My shower", "moods": ["calm"] },
+        { "label": "My hands", "moods": ["bright"] },
+        { "label": "My laundry", "moods": ["calm"] },
+        { "label": "My home", "moods": ["fresh"] }
+      ]
+    }
+  ]
+}

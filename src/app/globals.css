@@ -1,26 +1,226 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ==========================================================================
+   Solo's design tokens. ALL colours live here, in one place.
+   Values are sampled from the owner's concept image and are approximate.
+   Confirm them against the real label artwork, then edit them here only.
+   ========================================================================== */
+@theme {
+  --color-violet-900: #2a1745; /* deepest backgrounds, footer */
+  --color-violet-800: #3b2463; /* hero overlays, dark sections */
+  --color-violet-700: #523977; /* primary brand colour, buttons */
+  --color-violet-500: #7b5aa6; /* hover states, accents */
+  --color-violet-100: #ede7f6; /* light tint panels */
+  --color-gold-500: #d1aa74; /* rules, frames, large text on dark */
+  --color-gold-300: #e8cc94; /* highlights; small text on violet-700 */
+  --color-cream-50: #faf6ef; /* main light background */
+  --color-cream-200: #efe6d8; /* alternate light panels */
+  --color-sage-500: #838b5a; /* decorative botanical accents only */
+  --color-wood-500: #a78465; /* warm accent, sparingly */
+  --color-ink-900: #1e1330; /* body text on light */
+
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-jost), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --container-page: 75rem; /* 1200px */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/*
+  Colour rules (checked by `npm run check:contrast`):
+  - gold-500 is decorative, or large display text on violet-800/900 only.
+  - small gold text on violet-700 must use gold-300.
+  - body text: ink-900 on light, cream-50 on dark.
+  - sage-500 is never used for text.
+*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem; /* 17px on mobile */
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-violet-700);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.on-dark :focus-visible,
+.on-dark:focus-visible {
+  outline-color: var(--color-gold-500);
+}
+
+/* ---- Type helpers -------------------------------------------------------- */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-violet-700);
+}
+.on-dark .eyebrow {
+  color: var(--color-gold-300);
+}
+
+.prose-solos {
+  max-width: 65ch;
+}
+.prose-solos p + p,
+.prose-solos ul,
+.prose-solos ol {
+  margin-top: 1rem;
+}
+.prose-solos h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.prose-solos ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.prose-solos ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+
+/* ---- Botanical pattern (brand.pattern-botanical), ~6% opacity ----------- */
+.bg-botanical {
+  position: relative;
+  isolation: isolate;
+}
+.bg-botanical::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/brand/pattern-botanical.svg");
+  background-size: 240px 240px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* ---- Image slots: aspect ratio reserved so nothing ever shifts ---------- */
+.slot {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--ratio-mobile, var(--ratio));
+  background: var(--color-violet-100);
+}
+@media (min-width: 768px) {
+  .slot {
+    aspect-ratio: var(--ratio);
+  }
+}
+
+/* ---- Scroll reveal (hidden only after JS runs, so no-JS stays visible) -- */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(14px);
+}
+.reveal {
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal-hidden.reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- Hero droplets ------------------------------------------------------- */
+@keyframes droplet-rise {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateY(-70vh) scale(1.1);
+    opacity: 0;
+  }
+}
+.droplet {
+  position: absolute;
+  bottom: -12px;
+  width: 8px;
+  height: 11px;
+  border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
+  background: radial-gradient(circle at 35% 30%, #fff, rgba(232, 204, 148, 0.35));
+  animation: droplet-rise linear infinite;
+  pointer-events: none;
+}
+
+/* ---- Cart drawer (native <dialog>) -------------------------------------- */
+dialog.drawer {
+  margin: 0 0 0 auto;
+  height: 100dvh;
+  max-height: 100dvh;
+  width: min(26rem, 100vw);
+  padding: 0;
+  border: 0;
+  background: var(--color-cream-50);
+  color: var(--color-ink-900);
+}
+dialog.drawer::backdrop {
+  background: rgba(30, 19, 48, 0.55);
+}
+
+/* ---- Reduced motion & data-saver ---------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .droplet {
+    display: none;
+  }
+  .reveal,
+  .reveal-hidden {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+.sr-only-live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

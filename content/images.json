@@ -1,0 +1,610 @@
+{
+  "brand.logo-gold": {
+    "src": "/brand/logo-gold.svg",
+    "alt": "Solo's",
+    "ratio": "5/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 400,
+    "required": true,
+    "description": "Solo's wordmark in gold serif, transparent SVG",
+    "showWhilePlaceholder": true,
+    "note": "Draft wordmark made for the build. Replace with the real logo artwork."
+  },
+  "brand.logo-violet": {
+    "src": "/brand/logo-violet.svg",
+    "alt": "Solo's",
+    "ratio": "5/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 400,
+    "required": true,
+    "description": "Solo's wordmark in violet serif, transparent SVG",
+    "showWhilePlaceholder": true,
+    "note": "Draft wordmark made for the build. Replace with the real logo artwork."
+  },
+  "brand.favicon": {
+    "src": "/brand/favicon-512.png",
+    "alt": "Solo's icon, a gold S on violet",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 512,
+    "required": true,
+    "description": "Simple S or the wordmark initial on violet, 512 x 512",
+    "decorative": true,
+    "note": "src/app/icon.svg is the stand-in. Add the real 512 px PNG here and an icon file in src/app."
+  },
+  "brand.og": {
+    "src": "/images/brand/og.jpg",
+    "alt": "Solo's. Your moment, Solo's.",
+    "ratio": "1200/630",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Wordmark and tagline over the botanical pattern, 1200 x 630",
+    "note": "src/app/opengraph-image.tsx generates a stand-in until this is final."
+  },
+  "brand.pattern-botanical": {
+    "src": "/brand/pattern-botanical.svg",
+    "alt": "",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 240,
+    "required": true,
+    "description": "Seamless gold line-art lavender and leaf pattern, SVG tile",
+    "decorative": true,
+    "showWhilePlaceholder": true,
+    "note": "Original line art made for the build. Replace with the owner's label illustrations if supplied."
+  },
+  "reference.concept": {
+    "src": "/reference/solos-concept.jpg",
+    "alt": "The owner's concept image of the four Solo's products",
+    "ratio": "3/2",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1599,
+    "required": false,
+    "devOnly": true,
+    "description": "The owner's concept image, for development only. Lives in /reference, not shown on the site."
+  },
+  "home.hero": {
+    "src": "/images/home/hero.jpg",
+    "alt": "Solo's shower gel, hand wash, fabric softener and reed diffuser on a wooden table by a sunlit garden window",
+    "ratio": "16/9",
+    "focal": "50% 45%",
+    "status": "placeholder",
+    "minWidth": 2400,
+    "required": true,
+    "mobileRatio": "4/5",
+    "description": "The four products grouped on a wooden surface beside a sunlit garden window",
+    "showWhilePlaceholder": true,
+    "note": "Reference concept image used until real photography is ready"
+  },
+  "home.hero-video": {
+    "src": "/images/home/hero.mp4",
+    "alt": "",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1920,
+    "required": false,
+    "description": "Slow pan across the products with drifting light and water droplets. MP4 + WebM, 1080p, under 4 MB, 6 to 8 s loop, muted. Poster is home.hero",
+    "decorative": true
+  },
+  "home.moment.shower": {
+    "src": "/images/home/moment-shower.jpg",
+    "alt": "Bathroom or shower setting with the shower gel, steam and a towel",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Bathroom or shower setting with the shower gel, steam and a towel"
+  },
+  "home.moment.hands": {
+    "src": "/images/home/moment-hands.jpg",
+    "alt": "Hands lathering with the hand wash at a basin",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Hands lathering with the hand wash at a basin"
+  },
+  "home.moment.laundry": {
+    "src": "/images/home/moment-laundry.jpg",
+    "alt": "Folded soft linen and the fabric softener in a bright laundry area",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Folded soft linen and the fabric softener in a bright laundry area"
+  },
+  "home.moment.home": {
+    "src": "/images/home/moment-home.jpg",
+    "alt": "The reed diffuser on a shelf or side table in a calm living space",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "The reed diffuser on a shelf or side table in a calm living space"
+  },
+  "scent.lavender": {
+    "src": "/images/scents/lavender.jpg",
+    "alt": "Close-up of lavender sprigs",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": true,
+    "description": "Close-up of lavender sprigs"
+  },
+  "scent.orchid": {
+    "src": "/images/scents/orchid.jpg",
+    "alt": "Close-up of an orchid bloom",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": true,
+    "description": "Close-up of an orchid bloom"
+  },
+  "scent.jasmine": {
+    "src": "/images/scents/jasmine.jpg",
+    "alt": "Close-up of jasmine flowers",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": true,
+    "description": "Close-up of jasmine flowers"
+  },
+  "scent.apple-blossom": {
+    "src": "/images/scents/apple-blossom.jpg",
+    "alt": "Close-up of apple blossom",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": true,
+    "description": "Close-up of apple blossom"
+  },
+  "scent.eucalyptus": {
+    "src": "/images/scents/eucalyptus.jpg",
+    "alt": "Close-up of eucalyptus leaves",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": true,
+    "description": "Close-up of eucalyptus leaves"
+  },
+  "scent.sage": {
+    "src": "/images/scents/sage.jpg",
+    "alt": "Close-up of sage leaves",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": true,
+    "description": "Close-up of sage leaves"
+  },
+  "home.bundle": {
+    "src": "/images/home/bundle.jpg",
+    "alt": "Flat-lay of all four products with botanicals",
+    "ratio": "3/2",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1800,
+    "required": true,
+    "description": "Flat-lay of all four products with botanicals"
+  },
+  "home.story": {
+    "src": "/images/home/story.jpg",
+    "alt": "Portrait of the founder or maker at work, in natural light",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Portrait of the founder or maker at work, in natural light"
+  },
+  "home.proof.1": {
+    "src": "/images/home/proof-1.jpg",
+    "alt": "A real customer photo with the products (only with the customer's consent)",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": false,
+    "description": "A real customer photo with the products (only with the customer's consent)"
+  },
+  "home.proof.2": {
+    "src": "/images/home/proof-2.jpg",
+    "alt": "A real customer photo with the products (only with the customer's consent)",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": false,
+    "description": "A real customer photo with the products (only with the customer's consent)"
+  },
+  "home.proof.3": {
+    "src": "/images/home/proof-3.jpg",
+    "alt": "A real customer photo with the products (only with the customer's consent)",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": false,
+    "description": "A real customer photo with the products (only with the customer's consent)"
+  },
+  "home.proof.4": {
+    "src": "/images/home/proof-4.jpg",
+    "alt": "A real customer photo with the products (only with the customer's consent)",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": false,
+    "description": "A real customer photo with the products (only with the customer's consent)"
+  },
+  "home.proof.5": {
+    "src": "/images/home/proof-5.jpg",
+    "alt": "A real customer photo with the products (only with the customer's consent)",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": false,
+    "description": "A real customer photo with the products (only with the customer's consent)"
+  },
+  "home.proof.6": {
+    "src": "/images/home/proof-6.jpg",
+    "alt": "A real customer photo with the products (only with the customer's consent)",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 800,
+    "required": false,
+    "description": "A real customer photo with the products (only with the customer's consent)"
+  },
+  "home.journal.1": {
+    "src": "/images/home/journal-1.jpg",
+    "alt": "Cover image matching journal post 1 on the home page",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Cover image matching journal post 1 on the home page",
+    "note": "Home page teaser. Falls back to the post's own cover slot when this one is a placeholder."
+  },
+  "home.journal.2": {
+    "src": "/images/home/journal-2.jpg",
+    "alt": "Cover image matching journal post 2 on the home page",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Cover image matching journal post 2 on the home page",
+    "note": "Home page teaser. Falls back to the post's own cover slot when this one is a placeholder."
+  },
+  "home.journal.3": {
+    "src": "/images/home/journal-3.jpg",
+    "alt": "Cover image matching journal post 3 on the home page",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Cover image matching journal post 3 on the home page",
+    "note": "Home page teaser. Falls back to the post's own cover slot when this one is a placeholder."
+  },
+  "product.shower-gel.packshot": {
+    "src": "/images/products/shower-gel-packshot.jpg",
+    "alt": "Shower Gel, single product, front on, seamless cream background, soft shadow",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Shower Gel, single product, front on, seamless cream background, soft shadow"
+  },
+  "product.shower-gel.label-detail": {
+    "src": "/images/products/shower-gel-label.jpg",
+    "alt": "Macro of the gold-framed Shower Gel label showing wordmark, scent and size",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Macro of the gold-framed Shower Gel label showing wordmark, scent and size"
+  },
+  "product.shower-gel.lifestyle": {
+    "src": "/images/products/shower-gel-lifestyle.jpg",
+    "alt": "Shower Gel in its natural place, on a bath ledge",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Shower Gel in its natural place, on a bath ledge"
+  },
+  "product.shower-gel.in-use": {
+    "src": "/images/products/shower-gel-in-use.jpg",
+    "alt": "Hands or a person using the Shower Gel, face optional",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": false,
+    "description": "Hands or a person using the Shower Gel, face optional"
+  },
+  "product.hand-wash.packshot": {
+    "src": "/images/products/hand-wash-packshot.jpg",
+    "alt": "Hand Wash, single product, front on, seamless cream background, soft shadow",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Hand Wash, single product, front on, seamless cream background, soft shadow"
+  },
+  "product.hand-wash.label-detail": {
+    "src": "/images/products/hand-wash-label.jpg",
+    "alt": "Macro of the gold-framed Hand Wash label showing wordmark, scent and size",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Macro of the gold-framed Hand Wash label showing wordmark, scent and size"
+  },
+  "product.hand-wash.lifestyle": {
+    "src": "/images/products/hand-wash-lifestyle.jpg",
+    "alt": "Hand Wash in its natural place, beside a basin",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Hand Wash in its natural place, beside a basin"
+  },
+  "product.hand-wash.in-use": {
+    "src": "/images/products/hand-wash-in-use.jpg",
+    "alt": "Hands or a person using the Hand Wash, face optional",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": false,
+    "description": "Hands or a person using the Hand Wash, face optional"
+  },
+  "product.fabric-softener.packshot": {
+    "src": "/images/products/fabric-softener-packshot.jpg",
+    "alt": "Fabric Softener, single product, front on, seamless cream background, soft shadow",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Fabric Softener, single product, front on, seamless cream background, soft shadow"
+  },
+  "product.fabric-softener.label-detail": {
+    "src": "/images/products/fabric-softener-label.jpg",
+    "alt": "Macro of the gold-framed Fabric Softener label showing wordmark, scent and size",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Macro of the gold-framed Fabric Softener label showing wordmark, scent and size"
+  },
+  "product.fabric-softener.lifestyle": {
+    "src": "/images/products/fabric-softener-lifestyle.jpg",
+    "alt": "Fabric Softener in its natural place, on a laundry shelf",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Fabric Softener in its natural place, on a laundry shelf"
+  },
+  "product.fabric-softener.in-use": {
+    "src": "/images/products/fabric-softener-in-use.jpg",
+    "alt": "Hands or a person using the Fabric Softener, face optional",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": false,
+    "description": "Hands or a person using the Fabric Softener, face optional"
+  },
+  "product.home-scent.packshot": {
+    "src": "/images/products/home-scent-packshot.jpg",
+    "alt": "Reed Diffuser, single product, front on, seamless cream background, soft shadow",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Reed Diffuser, single product, front on, seamless cream background, soft shadow"
+  },
+  "product.home-scent.label-detail": {
+    "src": "/images/products/home-scent-label.jpg",
+    "alt": "Macro of the gold-framed Reed Diffuser label showing wordmark, scent and size",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Macro of the gold-framed Reed Diffuser label showing wordmark, scent and size"
+  },
+  "product.home-scent.lifestyle": {
+    "src": "/images/products/home-scent-lifestyle.jpg",
+    "alt": "Reed Diffuser in its natural place, on a side table",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": true,
+    "description": "Reed Diffuser in its natural place, on a side table"
+  },
+  "product.home-scent.in-use": {
+    "src": "/images/products/home-scent-in-use.jpg",
+    "alt": "Hands or a person using the Reed Diffuser, face optional",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": false,
+    "description": "Hands or a person using the Reed Diffuser, face optional"
+  },
+  "moment.shower.hero": {
+    "src": "/images/moments/shower-hero.jpg",
+    "alt": "Wide, airy bathroom scene with the shower gel",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Wide, airy bathroom scene with the shower gel"
+  },
+  "moment.hands.hero": {
+    "src": "/images/moments/hands-hero.jpg",
+    "alt": "Basin and hand wash with window light",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Basin and hand wash with window light"
+  },
+  "moment.laundry.hero": {
+    "src": "/images/moments/laundry-hero.jpg",
+    "alt": "Line-dried or folded linens with the fabric softener",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Line-dried or folded linens with the fabric softener"
+  },
+  "moment.home.hero": {
+    "src": "/images/moments/home-hero.jpg",
+    "alt": "Living space with the diffuser and eucalyptus",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Living space with the diffuser and eucalyptus"
+  },
+  "ritual.box": {
+    "src": "/images/ritual/box.jpg",
+    "alt": "Gift box or ribbon-tied set of the products",
+    "ratio": "3/2",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1800,
+    "required": true,
+    "description": "Gift box or ribbon-tied set of the products"
+  },
+  "ritual.card": {
+    "src": "/images/ritual/card.jpg",
+    "alt": "Hand-written gift card beside a product",
+    "ratio": "1/1",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1000,
+    "required": false,
+    "description": "Hand-written gift card beside a product"
+  },
+  "about.hero": {
+    "src": "/images/about/hero.jpg",
+    "alt": "Wide image of the workspace, ingredients or garden",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": true,
+    "description": "Wide image of the workspace, ingredients or garden"
+  },
+  "about.maker": {
+    "src": "/images/about/maker.jpg",
+    "alt": "Founder or maker portrait",
+    "ratio": "4/5",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Founder or maker portrait"
+  },
+  "about.workshop": {
+    "src": "/images/about/workshop.jpg",
+    "alt": "Production or filling in progress, tidy and clean",
+    "ratio": "3/2",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": false,
+    "description": "Production or filling in progress, tidy and clean"
+  },
+  "about.ingredients": {
+    "src": "/images/about/ingredients.jpg",
+    "alt": "Raw botanicals, oils or ingredients laid out",
+    "ratio": "3/2",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1600,
+    "required": false,
+    "description": "Raw botanicals, oils or ingredients laid out"
+  },
+  "contact.banner": {
+    "src": "/images/contact/banner.jpg",
+    "alt": "Soft lifestyle banner behind the contact block",
+    "ratio": "21/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 2000,
+    "required": false,
+    "description": "Soft lifestyle banner behind the contact block"
+  },
+  "journal.choose-a-scent-for-a-room.cover": {
+    "src": "/images/journal/choose-a-scent-for-a-room.jpg",
+    "alt": "Cover image for the journal post \"choose a scent for a room\"",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Cover image for the journal post \"choose a scent for a room\""
+  },
+  "journal.folding-fresh-laundry.cover": {
+    "src": "/images/journal/folding-fresh-laundry.jpg",
+    "alt": "Cover image for the journal post \"folding fresh laundry\"",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Cover image for the journal post \"folding fresh laundry\""
+  },
+  "journal.a-calm-evening-routine.cover": {
+    "src": "/images/journal/a-calm-evening-routine.jpg",
+    "alt": "Cover image for the journal post \"a calm evening routine\"",
+    "ratio": "16/9",
+    "focal": "50% 50%",
+    "status": "placeholder",
+    "minWidth": 1200,
+    "required": true,
+    "description": "Cover image for the journal post \"a calm evening routine\""
+  }
+}
